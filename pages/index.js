@@ -80,7 +80,7 @@ const Page = () => {
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Studies
+          Activities
         </Heading>
         <BioSection>
           <BioYear>1999</BioYear>
@@ -98,12 +98,6 @@ const Page = () => {
           <BioYear>2019-Now</BioYear>
           Started studying translation and interpretation at ULB
         </BioSection>
-      </Section>
-
-      <Section>
-        <Heading as="h3" variant="section-title">
-          Hobbies
-        </Heading>
       </Section>
     </Container>
   )
