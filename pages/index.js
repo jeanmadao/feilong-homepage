@@ -88,15 +88,15 @@ const Page = () => {
         </BioSection>
         <BioSection>
           <BioYear>2017-2018</BioYear>
-          Studied computer sciences at ULB for a year.
+          Studied computer sciences at ULB.
         </BioSection>
         <BioSection>
           <BioYear>2018-2019</BioYear>
-          Studied programming at 19 Coding School for a year.
+          Studied programming at 19 Coding School.
         </BioSection>
         <BioSection>
           <BioYear>2019-Now</BioYear>
-          Started studying translation and interpretation at ULB
+          Studying translation and interpretation at ULB.
         </BioSection>
       </Section>
     </Container>
