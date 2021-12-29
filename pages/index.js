@@ -5,6 +5,7 @@ import {
   Image,
   useColorModeValue
 } from '@chakra-ui/react'
+import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -27,79 +28,84 @@ const Page = () => {
   const birthday = new Date(1999, 10, 28)
   const age = getAge(birthday)
   return (
-    <Container>
-      <Box
-        borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        p={3}
-        mb={5}
-        align="center"
-      >
-        Welcome to my page!
-      </Box>
-
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Jean Pierre Huynh
-          </Heading>
-          <p>I love languages and programming</p>
-        </Box>
+    <Layout>
+      <Container>
         <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
+          borderRadius="lg"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          p={3}
+          mb={5}
           align="center"
         >
-          <Image
-            borderColor={useColorModeValue('blackAlpha.200', 'whiteAlpha.800')}
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
-            display="inline-block"
-            borderRadius="full"
-            src="/images/feilong.jpg"
-            alt="Profile Image"
-          />
+          Welcome to my page!
         </Box>
-      </Box>
 
-      <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          Me, the potato
-        </Heading>
-        <Paragraph>
-          Hi! My name is Jean Pierre, I&apos;m {age}-year-old, and I live in
-          Brussels, in Belgium.
-        </Paragraph>
-        <Paragraph>
-          I&apos;m currently studying translation and interpretation at ISTI,
-          Université Libre de Bruxelles(ULB).
-        </Paragraph>
-      </Section>
+        <Box display={{ md: 'flex' }}>
+          <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+              Jean Pierre Huynh
+            </Heading>
+            <p>I love languages and programming</p>
+          </Box>
+          <Box
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            align="center"
+          >
+            <Image
+              borderColor={useColorModeValue(
+                'blackAlpha.200',
+                'whiteAlpha.800'
+              )}
+              borderWidth={2}
+              borderStyle="solid"
+              maxWidth="100px"
+              display="inline-block"
+              borderRadius="full"
+              src="/images/feilong.jpg"
+              alt="Profile Image"
+            />
+          </Box>
+        </Box>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Activities
-        </Heading>
-        <BioSection>
-          <BioYear>1999</BioYear>
-          Born in Brussels, Belgium.
-        </BioSection>
-        <BioSection>
-          <BioYear>2017-2018</BioYear>
-          Studied computer sciences at ULB.
-        </BioSection>
-        <BioSection>
-          <BioYear>2018-2019</BioYear>
-          Studied programming at 19 Coding School.
-        </BioSection>
-        <BioSection>
-          <BioYear>2019-Now</BioYear>
-          Studying translation and interpretation at ULB.
-        </BioSection>
-      </Section>
-    </Container>
+        <Section delay={0.1}>
+          <Heading as="h3" variant="section-title">
+            Me, the potato
+          </Heading>
+          <Paragraph>
+            Hi! My name is Jean Pierre, I&apos;m {age}-year-old, and I live in
+            Brussels, in Belgium.
+          </Paragraph>
+          <Paragraph>
+            I&apos;m currently studying translation and interpretation at ISTI,
+            Université Libre de Bruxelles(ULB).
+          </Paragraph>
+        </Section>
+
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Activities
+          </Heading>
+          <BioSection>
+            <BioYear>1999</BioYear>
+            Born in Brussels, Belgium.
+          </BioSection>
+          <BioSection>
+            <BioYear>2017-2018</BioYear>
+            Studied computer sciences at ULB.
+          </BioSection>
+          <BioSection>
+            <BioYear>2018-2019</BioYear>
+            Studied programming at 19 Coding School.
+          </BioSection>
+          <BioSection>
+            <BioYear>2019-Now</BioYear>
+            Studying translation and interpretation at ULB.
+          </BioSection>
+        </Section>
+      </Container>
+    </Layout>
   )
 }
 
