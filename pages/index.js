@@ -1,4 +1,5 @@
 import {
+  AspectRatio,
   Link,
   Container,
   Heading,
@@ -116,7 +117,44 @@ const Page = () => {
             Studying translation and interpretation at ULB.
           </BioSection>
         </Section>
+
         <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            What is the purpose of this website ?
+          </Heading>
+          <Paragraph>
+            The purpose of this website is for me to practice using React and
+            Next.js, the main tools that were used to create this website. It
+            will be subject to a lot of modifications as I completely copied the
+            code from{' '}
+            <Link
+              href="https://www.youtube.com/channel/UC7yZ6keOGsvERMp2HaEbbXQ"
+              target="_blank"
+            >
+              {' '}
+              @craftzdog, aka devaslife on Youtube
+            </Link>
+            .
+          </Paragraph>
+          <br />
+          <AspectRatio ratio={16 / 9}>
+            <iframe
+              src="https://www.youtube.com/embed/bSMZgXzC9AA"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </AspectRatio>
+          <br />
+          <Paragraph>
+            Once I'm done building the website on my own, I will use it as a
+            portfolio and also as a blog as I want to share with stories and
+            opinions with everyone.
+          </Paragraph>
+          <br />
+        </Section>
+
+        <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
             On the web
           </Heading>
