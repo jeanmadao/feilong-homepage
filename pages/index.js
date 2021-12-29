@@ -147,8 +147,8 @@ const Page = () => {
           </AspectRatio>
           <br />
           <Paragraph>
-            Once I'm done building the website on my own, I will use it as a
-            portfolio and also as a blog as I want to share with stories and
+            Once I&apos;m done building the website on my own, I will use it as
+            a portfolio and also as a blog as I want to share stories and
             opinions with everyone.
           </Paragraph>
           <br />
